@@ -43,7 +43,8 @@ const LandingSection = () => {
                         <small className='text-2xl font-semibold'>Hello i'm</small>
                     <h1 className="text-3xl md:text-6xl font-bold text-custom-secondary">MD. Moniruzzaman Ripon</h1>
                     <p className="py-6 text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iure facilis, dicta eligendi aliquid deleniti, in sed sequi voluptas esse dolore doloribus? Aspernatur, fuga velit aperiam similique temporibus asperiores saepe?</p>
-                    <button className="btn border-0 bg-custom-primary">Download resume</button>
+                    <a href="https://drive.google.com/uc?id=1bS9FQDh-VbkxoO0DyC8j7bdSVtpKEsAG&export=download"><button className="btn border-0 bg-custom-primary">Download resume</button></a>
+                    
                     </div>
                 </div>
               <div  className='ml-auto w-full  order-1 lg:order-2' >

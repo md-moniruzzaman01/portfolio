@@ -3,17 +3,18 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import img1 from '../../images/galaxy.png'
-import img2 from '../../images/mediplas.PNG'
-import img3 from '../../images/dragonlight.PNG'
-import img4 from '../../images/redcarpet.PNG'
+import img1 from '../../images/gelaxy1.PNG'
+import img2 from '../../images/galaxy.png'
+import img3 from '../../images/mediplas.PNG'
+import img4 from '../../images/dragonlight.PNG'
+import img5 from '../../images/mk-tach.PNG'
 import './Home.css'
 import Projectcard from './Projectcard';
 const PopularProjects = () => {
     const projects = [
         {
             _id:1,
-            projectName:'Bengliyan',
+            projectName:'Gelaxy store',
             img:img1
         },
         {
@@ -23,19 +24,24 @@ const PopularProjects = () => {
         },
         {
             _id:3,
-            projectName:'Bengliyan',
+            projectName:'medica +',
             img:img3
         },
         {
             _id:4,
-            projectName:'Bengliyan',
+            projectName:'dragon light',
+            img:img4
+        },
+        {
+            _id:5,
+            projectName:'mk tech',
             img:img4
         },
     ]
     return (
         <div className='min-h-sreen container mx-auto'>
              <div className='mx-auto max-w-7xl'>
-        <h2 className='text-3xl font-semibold mb-11'>Some of my resent projects</h2>
+        <h2 className='text-3xl font-semibold mb-11'>Some of my projects</h2>
     <Swiper
         slidesPerView={2}
         spaceBetween={30}

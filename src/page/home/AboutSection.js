@@ -9,7 +9,8 @@ const AboutSection = () => {
                     <h1 class="text-3xl md:text-5xl font-bold">A 
                     Full Stack Website Developer</h1>
                     <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button className="btn border-0 bg-custom-primary px-7">hire me</button>
+                   
+                    <a href="#contactform"> <button className="btn border-0 bg-custom-primary px-7">hire me</button></a>
                 </div>
             </div>
         </div>

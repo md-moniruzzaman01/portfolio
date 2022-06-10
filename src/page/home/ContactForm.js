@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactForm = () => {
     return (
-        <div class="hero min-h-screen ">
+        <div class="hero min-h-screen " id='contactform'>
   <div class="hero-content flex-col lg:flex-row-reverse">
     
     <div class="card flex-shrink-0 w-full max-w-md  bg-base-100">
