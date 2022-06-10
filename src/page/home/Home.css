@@ -1,15 +1,11 @@
-.projectslide:hover{
+/* .projectslide:hover{
    
 
-}
-.projectslide{
-    height: 400px;
-    
-}
+} */
+.details{ display:none; } 
+ .projectslide:hover .details{ display:flex; } 
 
-.details:hover{
-    top: 0px;
-}
+
 .bg-hover{
     
     background-color: rgba(0,0,0,.9);

@@ -35,33 +35,18 @@ const PopularProjects = () => {
         {
             _id:5,
             projectName:'mk tech',
-            img:img4
+            img:img5
         },
     ]
     return (
         <div className='min-h-sreen container mx-auto'>
              <div className='mx-auto max-w-7xl'>
         <h2 className='text-3xl font-semibold mb-11'>Some of my projects</h2>
-    <Swiper
-        slidesPerView={2}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        {
-            projects.map(pj=> 
-            <SwiperSlide>
-                <Projectcard pj={pj}></Projectcard>
-            </SwiperSlide>
-               )
-        
-        }
-        
-        
-      </Swiper>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
+                {
+                    projects.map(pj=> <Projectcard pj={pj}></Projectcard>)
+                }
+            </div>
       <div className='flex justify-end mt-11'> 
         <button className='btn bg-custom-primary border-0'>View All</button>
       </div>
