@@ -1,0 +1,16 @@
+.projectslide:hover{
+   
+
+}
+.projectslide{
+    height: 400px;
+    
+}
+
+.details:hover{
+    top: 0px;
+}
+.bg-hover{
+    
+    background-color: rgba(0,0,0,.9);
+}
