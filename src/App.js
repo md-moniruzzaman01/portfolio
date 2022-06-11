@@ -7,6 +7,8 @@ import Project from "./page/Projects/Project";
 import Footer from "./page/shared/Footer";
 import Navbar from "./page/shared/Navbar";
 
+
+
 function App() {
   return (
     <div>

@@ -11,35 +11,9 @@ import img5 from '../../images/mk-tach.PNG'
 import './Home.css'
 import Projectcard from './Projectcard';
 import { useNavigate } from 'react-router-dom';
+import useData from '../../hooks/useData';
 const PopularProjects = () => {
-    const projects = [
-        {
-            _id:1,
-            projectName:'Gelaxy store',
-            img:img1
-        },
-        {
-            _id:2,
-            projectName:'Bengliyan',
-            img:img2
-        },
-        {
-            _id:3,
-            projectName:'medica +',
-            img:img3
-        },
-        {
-            _id:4,
-            projectName:'dragon light',
-            img:img4
-        },
-        {
-            _id:5,
-            projectName:'mk tech',
-            img:img5
-        },
-    ]
-
+    const [datas,setDatas]=useData()
     const navigate  = useNavigate()
     const gotodetails=(id)=>{
         navigate(`/project/${id}`)
@@ -50,7 +24,7 @@ const PopularProjects = () => {
         <h2 className='text-3xl font-semibold mb-11'>Some of my projects</h2>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                 {
-                    projects.map(pj=> <Projectcard pj={pj} gotodetails={gotodetails}></Projectcard>)
+                   datas.map(pj=> <Projectcard pj={pj} gotodetails={gotodetails}></Projectcard>)
                 }
             </div>
       <div className='flex justify-end mt-11'> 

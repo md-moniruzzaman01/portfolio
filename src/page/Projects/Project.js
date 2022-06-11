@@ -1,47 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import img1 from '../../images/gelaxy1.PNG'
 import img2 from '../../images/galaxy.png'
 import img3 from '../../images/mediplas.PNG'
 import img4 from '../../images/dragonlight.PNG'
 import img5 from '../../images/mk-tach.PNG'
+import useData from '../../hooks/useData';
 const Project = () => {
     const {id}=useParams()
-    const projects = [
-        {
-            _id:1,
-            projectName:'Gelaxy store',
-            img:img1
-        },
-        {
-            _id:2,
-            projectName:'Bengliyan',
-            img:img2
-        },
-        {
-            _id:3,
-            projectName:'medica +',
-            img:img3
-        },
-        {
-            _id:4,
-            projectName:'dragon light',
-            img:img4
-        },
-        {
-            _id:5,
-            projectName:'mk tech',
-            img:img5
-        },
-    ]
+    const [datas,setDatas]=useData()
 
-const project = projects.find(pjt=> pjt._id == id);
-console.log(project);
+const project = datas.find(pjt=> pjt._id == id);
+console.log(datas);
     return (
-        <div>
-            fds{id}
-            <img src={project?.img} alt="" />
+     <div>
+        <h1 className='text-2xl text-center font-bold'>Project {project?.ProjectName}</h1>
+          <div className='block md:flex max-w-9xl gap-2 mx-auto'>
+        <div className=" flex justify-center  w-11/12 mx-auto">
+            <img src={project?.img[1]} className='max-h-[30rem]  p-5 m-5 bg-gray-200  w-full rounded-lg shadow-lg' alt="" />
         </div>
+        <div className=" flex justify-center  w-5/12 mx-auto">
+            <img src={project?.img[0]} className='max-h-[30rem]  p-5 m-5 bg-gray-200 rounded-lg shadow-lg w-full' alt="" />
+        </div>
+        <div className=" flex justify-center  w-11/12 mx-auto">
+            <img src={project?.img[2]} className='max-h-[30rem]  p-5 m-5 bg-gray-200 rounded-lg shadow-lg w-full ' alt="" />
+        </div>
+       </div>
+       <div className="flex justify-end"><a href={project?.live}><button className='btn bg-custom-primary border-0'>Live website</button></a></div>
+     </div>
+            
     );
 };
 
