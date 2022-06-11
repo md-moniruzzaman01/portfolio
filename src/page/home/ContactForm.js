@@ -38,7 +38,7 @@ const ContactForm = () => {
      </div>
       <input type="submit" value="send Email"  class="btn btn-primary"/>
     </form>
-    <div class="text-center lg:text-left max-w-3xl">
+    <div class="text-center lg:text-left max-w-4xl">
       <h1 class="text-5xl font-bold">Let's work togather </h1>
       <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
     </div>

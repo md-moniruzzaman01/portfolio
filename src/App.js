@@ -1,16 +1,23 @@
-import AboutSection from "./page/home/AboutSection";
-import ContactForm from "./page/home/ContactForm";
-import LandingSection from "./page/home/LandingSection";
+
+import { Route, Routes } from "react-router-dom";
+import About from "./page/aboutme/About";
+import Blogs from "./page/Blogs/Blogs";
+import Home from "./page/home/Home";
+import Project from "./page/Projects/Project";
+import Footer from "./page/shared/Footer";
 import Navbar from "./page/shared/Navbar";
-import PopularProjects from './page/home/PopularProjects';
+
 function App() {
   return (
     <div>
      <Navbar></Navbar>
-     <LandingSection></LandingSection>
-     <AboutSection></AboutSection>
-     <PopularProjects></PopularProjects>
-     <ContactForm></ContactForm>
+     <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
+        <Route path="/blog" element={<Blogs/>}></Route>
+        <Route path="/project/:id" element={<Project/>}></Route>
+        </Routes>
+        <Footer></Footer>
     </div>
   );
 }
