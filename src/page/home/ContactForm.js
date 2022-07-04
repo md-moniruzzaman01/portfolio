@@ -25,16 +25,16 @@ const ContactForm = () => {
     <form ref={form} onSubmit={sendEmail} class="card flex-shrink-0 w-full max-w-md  bg-base-100">
       <div class="form-control">
       <label>Name</label>
-      <input type="text" name="user_name" class="input input-bordered"/>
+      <input type="text" name="user_name" class="input input-bordered" required/>
       </div>
      <div class="form-control">
      <label>Email</label>
-      <input type="email" name="user_email" class="input input-bordered"/>
+      <input type="email" name="user_email" class="input input-bordered" required/>
      </div>
      
      <div className="form-control">
      <label>Message</label>
-      <textarea name="message" class="input input-bordered h-44"/>
+      <textarea name="message" class="input input-bordered h-44" required/>
      </div>
       <input type="submit" value="send Email"  class="btn btn-primary"/>
     </form>
