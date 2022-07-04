@@ -6,7 +6,7 @@ import Home from "./page/home/Home";
 import Project from "./page/Projects/Project";
 import Footer from "./page/shared/Footer";
 import Navbar from "./page/shared/Navbar";
-
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {

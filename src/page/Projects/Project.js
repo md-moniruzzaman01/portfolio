@@ -11,7 +11,7 @@ const Project = () => {
     const [datas,setDatas]=useData()
 
 const project = datas.find(pjt=> pjt._id == id);
-console.log(datas);
+
     return (
      <div>
         <h1 className='text-2xl text-center font-bold'>Project {project?.ProjectName}</h1>
