@@ -3,8 +3,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-primary':'#1e9ce9',
-        'custom-secondary':'#0d2561',
+        
+        'custom-secondary':'rgb(109, 131, 242)',
+        'custom-bg':'#EAF0FC',
       },
       daisyui: {
         themes: [

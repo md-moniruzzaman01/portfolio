@@ -7,6 +7,7 @@ import Project from "./page/Projects/Project";
 import Footer from "./page/shared/Footer";
 import Navbar from "./page/shared/Navbar";
 import 'react-toastify/dist/ReactToastify.css';
+import ContactForm from "./page/home/ContactForm";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<About/>}></Route>
         <Route path="/blog" element={<Blogs/>}></Route>
         <Route path="/project/:id" element={<Project/>}></Route>
+        <Route path="/contact" element={<ContactForm/>}></Route>
         </Routes>
         <Footer></Footer>
     </div>

@@ -14,7 +14,7 @@ useEffect(()=>{
             <div className='h-full absolute bg-hover details top-0 left-0 w-full flex justify-center items-center'>
                <div>
                <h1 className='text-custom-secondary font-bold text-2xl text-center my-5'>{ProjectName}</h1>
-                <button className='btn bg-custom-primary border-0 mr-5' onClick={()=>gotodetails(_id)}>Details</button>
+                {/* <button className='btn bg-custom-primary border-0 mr-5' onClick={()=>gotodetails(_id)}>Details</button> */}
                 <a href={live}><button className='btn bg-custom-primary border-0'>Live website</button></a>
                 
                </div>

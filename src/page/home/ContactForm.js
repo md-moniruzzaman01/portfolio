@@ -25,8 +25,8 @@ const ContactForm = () => {
 
 
     return (
-        <div className="hero min-h-screen " id='contactform'>
-  <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero min-h-screen" id='contactform'>
+  <div className="container flex justify-around items-center flex-col lg:flex-row-reverse" >
 
     <form ref={form} onSubmit={sendEmail} className="card flex-shrink-0 w-full max-w-md  bg-base-100">
       <div className="form-control">
@@ -42,11 +42,11 @@ const ContactForm = () => {
      <label>Message</label>
       <textarea name="message" className="input input-bordered h-44" required/>
      </div>
-      <input type="submit" value="send Email"  className="btn btn-primary"/>
+      <input type="submit" value="send Email"  className="btn custom-btn mt-2 border-0"/>
     </form>
-    <div className="text-center lg:text-left max-w-4xl">
+    <div className="text-center mt-7 md:mt-0 lg:text-left max-w-xl">
       <h1 className="text-5xl font-bold">Let's work togather </h1>
-      <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <p className="py-4 text-lg">I am available to work on your projects and bring your ideas to life. Drop a massage so we can discuss.</p>
     </div>
   </div>
 </div>

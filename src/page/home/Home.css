@@ -10,3 +10,9 @@
     
     background-color: rgba(0,0,0,.9);
 }
+.custom-btn{
+    background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+}
+.logo-img{
+    height: 50px;
+}
